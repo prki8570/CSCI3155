@@ -157,36 +157,22 @@ The addition of a ternary operator to Python came from community desire and erro
 
 ###Bibliography
 
-[1]http://www.cplusplus.com/doc/tutorial/operators/
--ternary operators c++
+Citations in the above paper are denoted by numbers with square brackets around them, e.g. [4]
 
-[2]http://www.tutorialspoint.com/java/java_basic_operators.htm
--ternary operator JAVA
+1. [Ternary Operators in C++](http://www.cplusplus.com/doc/tutorial/operators/)
 
-[3]http://stackoverflow.com/questions/18767458/advantage-of-ternary-operator-over-if-else
--ternary operator vs if/else performance
+2. [Ternary Operators in Java](http://www.tutorialspoint.com/java/java_basic_operators.htm)
 
-[4]http://stackoverflow.com/questions/3091316/Python-conditional-ternary-operator-for-assignments
--ternary operator advantage Python
+3. [Ternary operators vs. if/else performance](http://stackoverflow.com/questions/18767458/advantage-of-ternary-operator-over-if-else)
 
-[5]http://bytes.com/topic/Python/answers/33461-alternative-suggestion-conditional-expressions-see-PEP-308-a
--motivation for ternary operator, way to implement in Python before 0308
+4. [Advantages of ternary operators in Python](http://stackoverflow.com/questions/3091316/Python-conditional-ternary-operator-for-assignments)
 
-[6]https://github.com/Python/peps/commit/5fd591e0b5aa35d7e9e040f4b5464da9ad533700
--inital PEP 0308 proposal
+5. [Ways of implementing ternary ops in Python before PEP 0308](http://bytes.com/topic/Python/answers/33461-alternative-suggestion-conditional-expressions-see-PEP-308-a)
 
-[7]http://grokbase.com/t/Python/Python-list/032kb8f178/PEP-308-eriks-alternatives-list
--all the voting options
+6. [Initial PEP 0308 proposal](https://github.com/Python/peps/commit/5fd591e0b5aa35d7e9e040f4b5464da9ad533700)
 
-[8]http://Python-checkins.git.net/2003-February/033698.html
--vetoed ifelse(c,e,e) for lack of short circuiting
+7. [Voting options proposed for this change](http://grokbase.com/t/Python/Python-list/032kb8f178/PEP-308-eriks-alternatives-list)
 
-[9]http://legacy.Python.org/dev/peps/PEP-0308/
--official PEP 308 documentation
+8. [Vetoing of "ifelse" function](http://Python-checkins.git.net/2003-February/033698.html)
 
-
-
-
-
-
-
+9. [Official PEP 0308 Documentation](http://legacy.Python.org/dev/peps/PEP-0308/)
