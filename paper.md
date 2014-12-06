@@ -84,7 +84,7 @@ if <condition> then <expression1> else <expression2>
 It had most of the main components that developers were looking for: left to right evaluation, short circuiting, and was easy to work through. The main problem with this form was the creation of a new keyword “then”. Guido van Rossum was hesitant to create a new keyword with an arbitrary meaning for a PEP that he was uncertain about in the first place. Some developers also thought that it could be difficult to add because the parser would believe that it's an 'if' statement. The following example represents such a case.[6]
 
 ````python
-if verbose then sys.stdout.write(“hello\n”) else None
+if verbose then sys.stdout.write(“hello”) else None
 ````
 
 In order to prevent a parser error, parentheses would be necessary. This led to the final contender:
