@@ -5,10 +5,13 @@ Python is a multipurpose high level programming language with a design that emph
 In Python version 2.4 (before PEP 308), conditional events were often handled using if/else statements.  This led to lots of code like the following[4]:
 
 ````python
-if condition:
-    var = value if true
-else:
-    var = value if false
+c and x or y   # incorrectly returns y if x is (any kind of) false
+
+(c and [x] or [y])[0]  # reliable, but ugly and churns objects
+
+(x, y)[not c]  # always evaluates both
+
+(y, x)[c]      # only if c is really a bool (or otherwise 0 or 1)
 ````
 
 While fairly straightforward, this example of an if/else statement is far more verbose than a ternary operator.  Having to use this syntax a few times in a file is fine; however, the code becomes difficult to read and understand when many conditional statements or nested conditional statements are needed.  Languages such as C++ and Java use the ?: ternary operator to simplify conditional expressions[1][2]. An example syntax in Java is as follows:
