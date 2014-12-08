@@ -135,7 +135,7 @@ lambda: (<expression1> if <condition2> else <expression2>)
 ````	
 This makes sense as the ternary operator has a higher order of precedence than that of lambda.
 
-The new syntax nearly created minor backwards incompatibility with Python versions before Python 2.5. In versions 2,4 and earlier, note the following operation:
+The new syntax nearly created minor backwards incompatibility with Python versions before Python 2.5. In versions 2.4 and earlier, note the following operation:
 
 ````python
 [f for f in lambda x: x, lambda x: x**2 if f(1) == 1]
