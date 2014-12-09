@@ -29,7 +29,9 @@ Difficulties about PEPs
 
 PEP 308
 ====
-* PEP 308 introduced conditional (ternary) operators into Python
+
+* Recall conditional statements: "If x then y else z"
+* PEP 308 introduced conditional syntax for ternary statements in Python
 * Implemented in Python 2.5 - September 19, 2006
 
 ***
@@ -67,14 +69,16 @@ Proposed solution number 1
 Issues with Guido's solution
 ====
 
-* Most confusing was the order
+* The order was the most confusing
+* Middle, left, right, rather than the traditional left-to-right
 * Not the easiest to remember for C++/Java progammers
 
 ***
 Advantages of Guido's solution
 ====
 
-* No new key words 
+* No new key words
+* Conformed to traditional Python syntax
 * Short-circuiting! Only one expression evaluated, thus optimizing performance
 
 ***
@@ -120,15 +124,15 @@ Strongest Contenders
 ````
 
 * Advantages: Prevents parser difficulty with parentheses, short circuited, left to right evaluation, standard python syntax
-* Disadvantages: parentheses and a difference from convention, when the colon (:) is usually at the end of a line
+* Disadvantages: Inconvenient parentheses and a difference from convention, when the colon (:) is usually at the end of a line
 
 ***
 
 The "do nothing" group
 ==========================
 * A certain subset of the community wished to not change anything at all
-* Continue using old conventions of using and + or logic to achieve conditionals
-* Keep backwards compatibility, it almost broke with PEP 308 implementation
+* Continue using old conventions of using "and" & "or" logic to achieve conditionals
+* Wanted to keep backwards compatibility, which almost broke with PEP 308 implementation
 * In a nutshell, some list declarations are very similar to PEP 308 conditionals
 
 ***
@@ -202,7 +206,7 @@ Resolution
 Conclusion
 ===========
 
-* First and foremost, use of conditionals was improved (duh)
+* The purpose of PEP 308 was fulfilled, use of conditionals was improved
 * Community responded well, as negative comments started to fade away
 * Python made a huge leap and was now competitive in relation to more standard languages
 
