@@ -200,7 +200,7 @@ Resolution
 =========
 
 * Guido van Rossum accepts proposal on Friday, September 30th, 2005
-* Implemented that October into the familiar if-else conditional statements that we know now
+* Implemented the following year into the familiar if-else conditional statements that we know now
 
 ****
 Conclusion
