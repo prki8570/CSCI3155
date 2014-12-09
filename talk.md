@@ -55,9 +55,9 @@ c and x or y   # incorrectly returns y if x
 ***
 
 
-Proposed solution number 1
+Initial proposal 
 ====
-* Guido van Rossum's own solution
+* Guido van Rossum's own idea
 
 ````python
 <expression1> if <condition> else <expression2> 
@@ -130,7 +130,7 @@ Strongest Contenders
 
 The "do nothing" group
 ==========================
-* A certain subset of the community wished to not change anything at all
+
 * Continue using old conventions of using "and" & "or" logic to achieve conditionals
 * Wanted to keep backwards compatibility, which almost broke with PEP 308 implementation
 * In a nutshell, some list declarations are very similar to PEP 308 conditionals
