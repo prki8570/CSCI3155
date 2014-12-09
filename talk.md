@@ -18,6 +18,15 @@ What's a PEP?
 
 ***
 
+Difficulties about PEPs
+====
+* Lack of consensus
+* Language still young
+* Community divided on what each person thought was best
+
+***
+
+
 PEP 308
 ====
 * PEP 308 introduced conditional (ternary) operators into Python
@@ -43,13 +52,6 @@ c and x or y   # incorrectly returns y if x
 
 ***
 
-Difficulties
-====
-* Lack of consensus
-* Language still young
-* Community divided on what each person thought was best
-
-***
 
 Proposed solution number 1
 ====
@@ -122,6 +124,15 @@ Strongest Contenders
 
 ***
 
+The "do nothing" group
+==========================
+* A certain subset of the community wished to not change anything at all
+* Continue using old conventions of using and + or logic to achieve conditionals
+* Keep backwards compatibility, it almost broke with PEP 308 implementation
+* In a nutshell, some list declarations are very similar to PEP 308 conditionals
+
+***
+
 Community Voting
 ===========================
 
@@ -149,26 +160,7 @@ if <condition2> else <expression3>
 
 ***
 
-The "do nothing" group
-==========================
-* A certain subset of the community wished to not change anything at all
-* Continue using old conventions of using and + or logic to achieve conditionals
-* Keep backwards compatibility, it almost broke with this new change:
 
-````python
-[f for f in lambda x: x, lambda x: x**2 if f(1) == 1]
-````
-
-* became
-
-````python
-[f for f in (lambda x: x, lambda x: x**2) # parenth.
- if f(1) == 1]
-````
-
-* lambda binds less tightly than the if-else expression, but could already be followed by an 'if' keyword (which binds even less tightly)
-
-***
 Principles of a Programming Language
 ======
 
