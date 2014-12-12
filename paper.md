@@ -1,5 +1,9 @@
 ##PEP 308: Conditional Statements in Python
 
+*Pradyumna Kikkeri, Madison Rockwell, Aaron Holt*
+
+*CSCI 3155 Fall 2014*
+
 Python is a multipurpose high level programming language with a design that emphasizes code readability. Python syntax is built to express code found in C++ or Java using fewer lines.  As with many languages, Python continues to add features and fix bugs in older versions in order to improve the development experience.  Development in Python is done primarily using the Python Enhancement Proposal (PEP) process.  In any given PEP, various changes to the language are proposed by the community or by Guido van Rossum (it should be noted that Python is Guido van Rossum's language, which means he gets the final decision on whether or not to implement a PEP). These changes are discussed and reviewed before they can become a part of the Python language. One PEP that made it into the language - PEP 308 - was a feature designed to give Python a new ternary operator. PEP 308 came about after many developers in the Python community complained about confusing if/else statements and expressed a desire for a shorter, cleaner method.
 
 In Python version 2.4 (before PEP 308), conditional events were often handled using if/else statements.  This led to lots of code like the following[4]:
